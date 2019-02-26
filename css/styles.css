@@ -1,0 +1,10 @@
+/* _styles.scss */
+body {
+  align-items: center;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/*# sourceMappingURL=styles.css.map */
