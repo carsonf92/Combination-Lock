@@ -10,7 +10,13 @@ $black: #070707;
 
 // Fonts
 
-$sans-serif: 'Helvetica', sans-serif;;
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700');
+
+$monospace: 'Source Code Pro', monospace;
+
+body {
+	font-family: $monospace;
+}
 
 // Layout
 

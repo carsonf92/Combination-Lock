@@ -1,4 +1,9 @@
 /* _styles.scss */
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700");
+body {
+  font-family: "Source Code Pro", monospace;
+}
+
 body {
   align-items: center;
   background: #fff;
