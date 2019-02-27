@@ -12,4 +12,98 @@ body {
   min-height: 100vh;
 }
 
+#combo-lock #indicator {
+  border: 2px solid #e1e1e1;
+  border-radius: 50%;
+  height: 32px;
+  margin: 0 auto 24px;
+  overflow: hidden;
+  position: relative;
+  width: 32px;
+}
+#combo-lock #indicator.locked img.unlocked {
+  transform: translate(-50%, 50%);
+}
+#combo-lock #indicator.unlocked img.locked {
+  transform: translate(-50%, -100%);
+}
+#combo-lock #indicator.unlocked img.unlocked {
+  transform: translate(-50%, -50%);
+}
+#combo-lock #indicator img {
+  padding: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+}
+#combo-lock #indicator img.locked {
+  background: #f56666;
+}
+#combo-lock #indicator img.unlocked {
+  background: #50EF87;
+}
+#combo-lock #combination {
+  border: 2px solid #e1e1e1;
+  border-radius: 4px;
+  display: flex;
+  padding: 0 4px;
+}
+#combo-lock #combination .wheel {
+  font-size: 24px;
+  padding: 0 4px;
+  text-align: center;
+}
+#combo-lock #combination .wheel .increment,
+#combo-lock #combination .wheel .decrement {
+  background: #fff;
+  border: 2px solid #e1e1e1;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+#combo-lock #combination .wheel .increment:active,
+#combo-lock #combination .wheel .decrement:active {
+  border-color: #070707;
+}
+#combo-lock #combination .wheel .increment img,
+#combo-lock #combination .wheel .decrement img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px;
+}
+#combo-lock #combination .wheel .increment {
+  margin-top: -14px;
+}
+#combo-lock #combination .wheel .decrement {
+  margin-bottom: -14px;
+}
+#combo-lock #combination .wheel .digit {
+  background: #fff;
+  border: 2px solid #e1e1e1;
+  border-radius: 24px;
+  caret-color: #fff;
+  cursor: pointer;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px 0;
+  text-align: center;
+  width: 24px;
+}
+#combo-lock #combination .wheel .digit:focus {
+  border-color: #070707;
+}
+#combo-lock #combination .wheel .digit::-webkit-inner-spin-button, #combo-lock #combination .wheel .digit::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#combo-lock #combination .wheel .digit::selection {
+  background: #fff;
+}
+
 /*# sourceMappingURL=styles.css.map */
