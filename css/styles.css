@@ -36,6 +36,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: transform 0.25s ease;
   width: 16px;
 }
 #combo-lock #indicator img.locked {
@@ -70,6 +71,11 @@ body {
 #combo-lock #combination .wheel .decrement:active {
   border-color: #fff;
 }
+#combo-lock #combination .wheel .increment.click,
+#combo-lock #combination .wheel .decrement.click {
+  border-color: #fff;
+  transition: border-color 0s ease;
+}
 #combo-lock #combination .wheel .increment img,
 #combo-lock #combination .wheel .decrement img {
   position: absolute;
@@ -95,6 +101,7 @@ body {
   outline: none;
   padding: 8px 0;
   text-align: center;
+  user-select: none;
   transition: border-color 0.1s ease;
   width: 24px;
 }

@@ -66,6 +66,7 @@ body {
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
+			transition: transform 0.25s ease;
 			width: 16px;
 
 			&.locked {
@@ -104,6 +105,11 @@ body {
 					border-color: $white;
 				}
 
+				&.click {
+					border-color: $white;
+					transition: border-color 0s ease;
+				}
+
 				img {
 					position: absolute;
 					top: 50%;
@@ -132,6 +138,7 @@ body {
 				outline: none;
 				padding: 8px 0;
 				text-align: center;
+				user-select: none;
 				transition: border-color 0.1s ease;
 				width: 24px;
 
