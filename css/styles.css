@@ -63,6 +63,7 @@ body {
   cursor: pointer;
   height: 24px;
   position: relative;
+  transition: border-color 0.1s ease;
   width: 24px;
 }
 #combo-lock #combination .wheel .increment:active,
@@ -94,6 +95,7 @@ body {
   outline: none;
   padding: 8px 0;
   text-align: center;
+  transition: border-color 0.1s ease;
   width: 24px;
 }
 #combo-lock #combination .wheel .digit:focus {
