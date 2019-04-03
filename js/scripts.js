@@ -104,6 +104,16 @@ for (var i = 0; i < wheels.length; i++) {
 			combinationLock.wheels[wheelIndex] = parseInt(document.querySelectorAll('.digit')[wheelIndex].value);
 			checkLock();
 		}
+
+		// if number is longer than 1 digit
+		if (this.value.length > 1) {
+			this.value = 0;
+		}
+
+		// if number is less that 1 digit
+		if (this.value.length < 1) {
+			this.value = 0;
+		}
 	});
 }
 
